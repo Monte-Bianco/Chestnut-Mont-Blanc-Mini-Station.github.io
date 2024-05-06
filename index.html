@@ -12,9 +12,13 @@ subtitle: This is supposed to be my personal notebook.
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-  /* Apply the 'Caveat' font only to the title and subtitle */
-  h1, .subtitle {
+  /* Apply the 'Caveat' font to the title and subtitle */
+  h1, h1 + p {
     font-family: 'Caveat', cursive;
   }
 </style>
+
+<h1>{{ page.title }}</h1>
+<p>This is supposed to be my personal notebook.</p> <!-- This is treated as the subtitle -->
+
 
