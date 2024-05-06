@@ -2,6 +2,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Include the Google Font 'Caveat' with desired weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Global Style - Applying 'Caveat' font to all text -->
+  <style>
+    body, h1, h2, h3, p, a, button, input, textarea {
+      font-family: 'Caveat', cursive;
+    }
+  </style>
+
   {% capture pagetitle %}
     {%- if page.share-title -%}
       {{ page.share-title | strip_html | xml_escape }}
